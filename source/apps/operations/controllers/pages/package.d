@@ -1,6 +1,6 @@
-module apps.myname.controllers.pages;
+module apps.operations.controllers.pages;
 
 public {
-  import apps.myname.controllers.pages.error;
-  import apps.myname.controllers.pages.index;
+  import apps.operations.controllers.pages.error;
+  import apps.operations.controllers.pages.index;
 }
