@@ -1,18 +1,18 @@
-module apps.myname.views.index;
+module apps.operations.views.index;
 
-import apps.myname;
+import apps.operations;
 @safe:
 
-class DMYNAMEIndexView : DView {
-  mixin(ViewThis!("MYNAMEIndexView"));
+class DOPERATIONSIndexView : DView {
+  mixin(ViewThis!("OPERATIONSIndexView"));
 
   override DH5Obj[] toH5(STRINGAA options = null) {
-    debugMethodCall(moduleName!DMYNAMEIndexView~":DMYNAMEIndexView("~this.name~")::toH5");
+    debugMethodCall(moduleName!DOPERATIONSIndexView~":DOPERATIONSIndexView("~this.name~")::toH5");
     super.toH5(options);
 
     return [
-      H5Div("APP myname -> Error")
+      H5Div("APP operations -> Error")
     ].toH5;
   }
 }
-mixin(ViewCalls!("MYNAMEIndexView"));
+mixin(ViewCalls!("OPERATIONSIndexView"));
