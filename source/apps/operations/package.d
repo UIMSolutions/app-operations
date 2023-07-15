@@ -25,9 +25,11 @@ public {
   import apps.operations.views;
 }
 
+
 DApp operationsApp;
 static this() {
-  App("operationsApp", "/apps/operations")
+  AppRegistry.register("apps.operations", 
+    App("operationsApp", "/apps/operations")
       .importTranslations()
       .addRoutes(
         Route("", HTTPMethod.GET, IndexPageController),

@@ -3,11 +3,11 @@ module apps.operations.views.index;
 import apps.operations;
 @safe:
 
-class DOPERATIONSIndexView : DView {
-  mixin(ViewThis!("OPERATIONSIndexView"));
+class DIndexView : DView {
+  mixin(ViewThis!("IndexView"));
 
   override DH5Obj[] toH5(STRINGAA options = null) {
-    debugMethodCall(moduleName!DOPERATIONSIndexView~":DOPERATIONSIndexView("~this.name~")::toH5");
+    debugMethodCall(moduleName!DIndexView~":DIndexView("~this.name~")::toH5");
     super.toH5(options);
 
     return [
@@ -15,4 +15,4 @@ class DOPERATIONSIndexView : DView {
     ].toH5;
   }
 }
-mixin(ViewCalls!("OPERATIONSIndexView"));
+mixin(ViewCalls!("IndexView"));

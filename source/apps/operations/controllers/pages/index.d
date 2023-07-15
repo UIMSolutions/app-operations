@@ -3,14 +3,14 @@ module apps.operations.controllers.pages.index;
 import apps.operations;
 @safe:
 
-class DOPERATIONSIndexPageController : DAPPPageController {
-  mixin(ControllerThis!("OPERATIONSIndexPageController"));
+class DIndexPageController : DPageController {
+  mixin(ControllerThis!("IndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(OPERATIONSIndexView(this));
+      .view(IndexView(this));
   }
 }
-mixin(ControllerCalls!("OPERATIONSIndexPageController"));
+mixin(ControllerCalls!("IndexPageController"));
