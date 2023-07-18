@@ -29,7 +29,7 @@ public {
 DApp operationsApp;
 static this() {
   AppRegistry.register("apps.operations", 
-    App("operationsApp", "/apps/operations")
+    App("operationsApp", "apps/operations")
       .importTranslations()
       .addRoutes(
         Route("", HTTPMethod.GET, IndexPageController),
